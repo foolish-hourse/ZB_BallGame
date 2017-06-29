@@ -1,0 +1,378 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B6175C2D1F028C7A0090C7C3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6175C2C1F028C7A0090C7C3 /* main.m */; };
+		B6175C301F028C7A0090C7C3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6175C2F1F028C7A0090C7C3 /* AppDelegate.m */; };
+		B6175C361F028C7A0090C7C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6175C341F028C7A0090C7C3 /* Main.storyboard */; };
+		B6175C381F028C7A0090C7C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6175C371F028C7A0090C7C3 /* Assets.xcassets */; };
+		B6175C3B1F028C7A0090C7C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6175C391F028C7A0090C7C3 /* LaunchScreen.storyboard */; };
+		B6BFDBA71F028E6500E5C9E5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BFDBA61F028E6500E5C9E5 /* ViewController.m */; };
+		B6BFDBAB1F02900900E5C9E5 /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BFDBAA1F02900900E5C9E5 /* BaseView.m */; };
+		B6BFDBAE1F02908300E5C9E5 /* BallView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BFDBAD1F02908300E5C9E5 /* BallView.m */; };
+		B6BFDBB11F0294E300E5C9E5 /* BallLogicalModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BFDBB01F0294E300E5C9E5 /* BallLogicalModel.m */; };
+		B6BFDBB51F02A30100E5C9E5 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BFDBB41F02A30100E5C9E5 /* UIView+Extension.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B6175C281F028C7A0090C7C3 /* ZB_BallGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZB_BallGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6175C2C1F028C7A0090C7C3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B6175C2E1F028C7A0090C7C3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B6175C2F1F028C7A0090C7C3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B6175C351F028C7A0090C7C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B6175C371F028C7A0090C7C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B6175C3A1F028C7A0090C7C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B6175C3C1F028C7A0090C7C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6BFDBA51F028E6500E5C9E5 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B6BFDBA61F028E6500E5C9E5 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B6BFDBA91F02900900E5C9E5 /* BaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
+		B6BFDBAA1F02900900E5C9E5 /* BaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
+		B6BFDBAC1F02908300E5C9E5 /* BallView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BallView.h; sourceTree = "<group>"; };
+		B6BFDBAD1F02908300E5C9E5 /* BallView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BallView.m; sourceTree = "<group>"; };
+		B6BFDBAF1F0294E300E5C9E5 /* BallLogicalModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BallLogicalModel.h; sourceTree = "<group>"; };
+		B6BFDBB01F0294E300E5C9E5 /* BallLogicalModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BallLogicalModel.m; sourceTree = "<group>"; };
+		B6BFDBB31F02A30100E5C9E5 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		B6BFDBB41F02A30100E5C9E5 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B6175C251F028C7A0090C7C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B6175C1F1F028C7A0090C7C3 = {
+			isa = PBXGroup;
+			children = (
+				B6175C2A1F028C7A0090C7C3 /* ZB_BallGame */,
+				B6175C291F028C7A0090C7C3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B6175C291F028C7A0090C7C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B6175C281F028C7A0090C7C3 /* ZB_BallGame.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B6175C2A1F028C7A0090C7C3 /* ZB_BallGame */ = {
+			isa = PBXGroup;
+			children = (
+				B6175C2E1F028C7A0090C7C3 /* AppDelegate.h */,
+				B6175C2F1F028C7A0090C7C3 /* AppDelegate.m */,
+				B6BFDBB21F02A30100E5C9E5 /* UIView+Extension */,
+				B6BFDBA21F028E0300E5C9E5 /* Controller */,
+				B6BFDBA31F028E0300E5C9E5 /* Model */,
+				B6BFDBA41F028E0300E5C9E5 /* View */,
+				B6175C341F028C7A0090C7C3 /* Main.storyboard */,
+				B6175C371F028C7A0090C7C3 /* Assets.xcassets */,
+				B6175C391F028C7A0090C7C3 /* LaunchScreen.storyboard */,
+				B6175C3C1F028C7A0090C7C3 /* Info.plist */,
+				B6175C2B1F028C7A0090C7C3 /* Supporting Files */,
+			);
+			path = ZB_BallGame;
+			sourceTree = "<group>";
+		};
+		B6175C2B1F028C7A0090C7C3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B6175C2C1F028C7A0090C7C3 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B6BFDBA21F028E0300E5C9E5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B6BFDBA51F028E6500E5C9E5 /* ViewController.h */,
+				B6BFDBA61F028E6500E5C9E5 /* ViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B6BFDBA31F028E0300E5C9E5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B6BFDBAF1F0294E300E5C9E5 /* BallLogicalModel.h */,
+				B6BFDBB01F0294E300E5C9E5 /* BallLogicalModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B6BFDBA41F028E0300E5C9E5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B6BFDBA91F02900900E5C9E5 /* BaseView.h */,
+				B6BFDBAA1F02900900E5C9E5 /* BaseView.m */,
+				B6BFDBAC1F02908300E5C9E5 /* BallView.h */,
+				B6BFDBAD1F02908300E5C9E5 /* BallView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B6BFDBB21F02A30100E5C9E5 /* UIView+Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B6BFDBB31F02A30100E5C9E5 /* UIView+Extension.h */,
+				B6BFDBB41F02A30100E5C9E5 /* UIView+Extension.m */,
+			);
+			path = "UIView+Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B6175C271F028C7A0090C7C3 /* ZB_BallGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6175C3F1F028C7A0090C7C3 /* Build configuration list for PBXNativeTarget "ZB_BallGame" */;
+			buildPhases = (
+				B6175C241F028C7A0090C7C3 /* Sources */,
+				B6175C251F028C7A0090C7C3 /* Frameworks */,
+				B6175C261F028C7A0090C7C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZB_BallGame;
+			productName = ZB_BallGame;
+			productReference = B6175C281F028C7A0090C7C3 /* ZB_BallGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B6175C201F028C7A0090C7C3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = hongdongjie;
+				TargetAttributes = {
+					B6175C271F028C7A0090C7C3 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = X5L85KS9B2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = B6175C231F028C7A0090C7C3 /* Build configuration list for PBXProject "ZB_BallGame" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B6175C1F1F028C7A0090C7C3;
+			productRefGroup = B6175C291F028C7A0090C7C3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B6175C271F028C7A0090C7C3 /* ZB_BallGame */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B6175C261F028C7A0090C7C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6175C3B1F028C7A0090C7C3 /* LaunchScreen.storyboard in Resources */,
+				B6175C381F028C7A0090C7C3 /* Assets.xcassets in Resources */,
+				B6175C361F028C7A0090C7C3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B6175C241F028C7A0090C7C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6BFDBA71F028E6500E5C9E5 /* ViewController.m in Sources */,
+				B6175C301F028C7A0090C7C3 /* AppDelegate.m in Sources */,
+				B6BFDBAE1F02908300E5C9E5 /* BallView.m in Sources */,
+				B6BFDBB51F02A30100E5C9E5 /* UIView+Extension.m in Sources */,
+				B6BFDBAB1F02900900E5C9E5 /* BaseView.m in Sources */,
+				B6BFDBB11F0294E300E5C9E5 /* BallLogicalModel.m in Sources */,
+				B6175C2D1F028C7A0090C7C3 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B6175C341F028C7A0090C7C3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6175C351F028C7A0090C7C3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B6175C391F028C7A0090C7C3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6175C3A1F028C7A0090C7C3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B6175C3D1F028C7A0090C7C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B6175C3E1F028C7A0090C7C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B6175C401F028C7A0090C7C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = X5L85KS9B2;
+				INFOPLIST_FILE = ZB_BallGame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hdj.ZB-BallGame";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B6175C411F028C7A0090C7C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = X5L85KS9B2;
+				INFOPLIST_FILE = ZB_BallGame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hdj.ZB-BallGame";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B6175C231F028C7A0090C7C3 /* Build configuration list for PBXProject "ZB_BallGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6175C3D1F028C7A0090C7C3 /* Debug */,
+				B6175C3E1F028C7A0090C7C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6175C3F1F028C7A0090C7C3 /* Build configuration list for PBXNativeTarget "ZB_BallGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6175C401F028C7A0090C7C3 /* Debug */,
+				B6175C411F028C7A0090C7C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B6175C201F028C7A0090C7C3 /* Project object */;
+}
