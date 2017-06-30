@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17AD1B1C1F06037C00C62C18 /* RectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17AD1B1B1F06037C00C62C18 /* RectView.m */; };
 		B6175C2D1F028C7A0090C7C3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6175C2C1F028C7A0090C7C3 /* main.m */; };
 		B6175C301F028C7A0090C7C3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6175C2F1F028C7A0090C7C3 /* AppDelegate.m */; };
 		B6175C361F028C7A0090C7C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6175C341F028C7A0090C7C3 /* Main.storyboard */; };
 		B6175C381F028C7A0090C7C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6175C371F028C7A0090C7C3 /* Assets.xcassets */; };
 		B6175C3B1F028C7A0090C7C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6175C391F028C7A0090C7C3 /* LaunchScreen.storyboard */; };
+		B6B8FF621F0560CC00D29BC8 /* ContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B8FF611F0560CC00D29BC8 /* ContainerView.m */; };
 		B6BFDBA71F028E6500E5C9E5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BFDBA61F028E6500E5C9E5 /* ViewController.m */; };
 		B6BFDBAB1F02900900E5C9E5 /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BFDBAA1F02900900E5C9E5 /* BaseView.m */; };
 		B6BFDBAE1F02908300E5C9E5 /* BallView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BFDBAD1F02908300E5C9E5 /* BallView.m */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		17AD1B1A1F06037C00C62C18 /* RectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RectView.h; sourceTree = "<group>"; };
+		17AD1B1B1F06037C00C62C18 /* RectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RectView.m; sourceTree = "<group>"; };
 		B6175C281F028C7A0090C7C3 /* ZB_BallGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZB_BallGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6175C2C1F028C7A0090C7C3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B6175C2E1F028C7A0090C7C3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -28,6 +32,8 @@
 		B6175C371F028C7A0090C7C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6175C3A1F028C7A0090C7C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B6175C3C1F028C7A0090C7C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6B8FF601F0560CC00D29BC8 /* ContainerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContainerView.h; sourceTree = "<group>"; };
+		B6B8FF611F0560CC00D29BC8 /* ContainerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContainerView.m; sourceTree = "<group>"; };
 		B6BFDBA51F028E6500E5C9E5 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		B6BFDBA61F028E6500E5C9E5 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B6BFDBA91F02900900E5C9E5 /* BaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
@@ -116,8 +122,12 @@
 			children = (
 				B6BFDBA91F02900900E5C9E5 /* BaseView.h */,
 				B6BFDBAA1F02900900E5C9E5 /* BaseView.m */,
+				B6B8FF601F0560CC00D29BC8 /* ContainerView.h */,
+				B6B8FF611F0560CC00D29BC8 /* ContainerView.m */,
 				B6BFDBAC1F02908300E5C9E5 /* BallView.h */,
 				B6BFDBAD1F02908300E5C9E5 /* BallView.m */,
+				17AD1B1A1F06037C00C62C18 /* RectView.h */,
+				17AD1B1B1F06037C00C62C18 /* RectView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -203,11 +213,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6B8FF621F0560CC00D29BC8 /* ContainerView.m in Sources */,
 				B6BFDBA71F028E6500E5C9E5 /* ViewController.m in Sources */,
 				B6175C301F028C7A0090C7C3 /* AppDelegate.m in Sources */,
 				B6BFDBAE1F02908300E5C9E5 /* BallView.m in Sources */,
 				B6BFDBB51F02A30100E5C9E5 /* UIView+Extension.m in Sources */,
 				B6BFDBAB1F02900900E5C9E5 /* BaseView.m in Sources */,
+				17AD1B1C1F06037C00C62C18 /* RectView.m in Sources */,
 				B6BFDBB11F0294E300E5C9E5 /* BallLogicalModel.m in Sources */,
 				B6175C2D1F028C7A0090C7C3 /* main.m in Sources */,
 			);

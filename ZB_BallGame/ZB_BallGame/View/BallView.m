@@ -8,6 +8,8 @@
 
 #import "BallView.h"
 
+//#import "BallLogicalModel.h"
+
 @implementation BallView
 
 #pragma mark - factory methods
@@ -27,9 +29,24 @@
         self.ballAngle = M_PI / 6;
         //移动速度 500
         self.ballSpeed = 500;
+        //计时器
+//        _ballTimer = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(ballTimer:) userInfo:nil repeats:YES];
     }
     return self;
 }
+
+//#pragma mark - timer
+//- (void)ballTimer:(NSTimer *)timer {
+//    [BallLogicalModel dealRoundKnockBall:self];
+//    if (self.ballArr.count > 1) {
+//        for (int i = 0; i < self.ballArr.count; i++) {
+//            BallView *ballView = self.ballArr[i];
+//            if (ballView != self) {
+//                [BallLogicalModel dealTwoKnockBall:self twoBallView:ballView];
+//            }
+//        }
+//    }
+//}
 
 #pragma mark - set methods
 ///颜色  可设置

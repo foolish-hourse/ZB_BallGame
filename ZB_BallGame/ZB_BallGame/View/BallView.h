@@ -17,6 +17,10 @@
 @property (nonatomic, assign) CGFloat ballAngle;
 ///速度 可设置 50px/s 0.5px/0.01s
 @property (nonatomic, assign) CGFloat ballSpeed;
+///计时器
+//@property (nonatomic, strong) NSTimer *ballTimer;
+///球数组
+//@property (nonatomic, strong) NSMutableArray *ballArr;
 
 ///工厂类方法 获得一个球
 + (instancetype)createABallInstance;

@@ -7,31 +7,39 @@
 //
 
 #import "ViewController.h"
+
 #import "BallView.h"
+#import "ContainerView.h"
+#import "RectView.h"
+
 #import "BallLogicalModel.h"
 
 @interface ViewController ()
-///存储小球数组
-@property (nonatomic, strong) NSMutableArray *ballArr;
+///容器视图
+@property (nonatomic, strong) ContainerView *containerView;
 @end
 
 @implementation ViewController
 #pragma mark - lazy load
-- (NSMutableArray *)ballArr {
-    if (!_ballArr) {
-        _ballArr = [NSMutableArray new];
+- (ContainerView *)containerView {
+    if (!_containerView) {
+        _containerView = [[ContainerView alloc] initWithFrame:self.view.bounds];
+        [self.view addSubview:_containerView];
+        _containerView.backgroundColor = [UIColor whiteColor];
     }
-    return _ballArr;
+    return _containerView;
 }
 
 #pragma mark - view Func
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    //添加手势
+    self.containerView.hidden = NO;
+    
+    //添加双击手势
     UITapGestureRecognizer *tapGr = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapClick:)];
     tapGr.numberOfTapsRequired = 2;
-    [self.view addGestureRecognizer:tapGr];
+    [self.containerView addGestureRecognizer:tapGr];
     
     //创建一个运动环境
     [self createTimer];
@@ -46,8 +54,8 @@
 
 #pragma mark - timer
 - (void)moveTimer:(NSTimer *)timer {
-    for (int i = 0; i < self.ballArr.count; i++) {
-        BallView *ballView = self.ballArr[i];
+    for (int i = 0; i < self.containerView.ballArr.count; i++) {
+        BallView *ballView = self.containerView.ballArr[i];
         //单个小球碰撞四壁逻辑
         [BallLogicalModel dealRoundKnockBall:ballView];
         
@@ -67,9 +75,9 @@
     BallView *ballView = [BallView createABallInstance];
     ballView.ballRadius = 15;
     ballView.ballColor = [UIColor colorWithRed:arc4random() % 255 / 255.0 green:arc4random() % 255 / 255.0 blue:arc4random() % 255 / 255.0 alpha:1];
-    
-    [self.view addSubview:ballView];
-    [self.ballArr addObject:ballView];
+    [self.containerView addSubview:ballView];
+    [self.containerView.ballArr addObject:ballView];
+//    ballView.ballArr = self.ballArr;
     ballView.center = location;
     
 }
